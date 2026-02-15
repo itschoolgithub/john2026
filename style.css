@@ -29,3 +29,18 @@ header {
     padding-block: 27px;
     padding-right: 60px;
 }
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin: 0 auto;
+    width: 856px;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    max-width: 500px;
+}
