@@ -8,6 +8,10 @@
     --dark: #21243D;
 }
 
+body {
+    color: var(--dark);
+}
+
 a {
     color: #000;
     text-decoration: none;
@@ -43,6 +47,10 @@ header {
     display: flex;
     justify-content: space-between;
     gap: 20px;
+}
+
+.about {
+    padding-block: 127px 68px;
 }
 
 .info {
@@ -84,4 +92,65 @@ header {
     border: none;
     text-decoration: none;
     /* outline: none; */
+}
+
+/* Начинаем стилизовать блок recent*/
+
+.recent {
+    background-color: #EDF7FA;
+    padding-block: 21px 32px;
+}
+
+.recent__top {
+    display: flex;
+    justify-content: space-between;
+}
+
+.recent__items {
+    display: flex;
+    gap: 20px;
+}
+
+.recent .post {
+    flex-grow: 1;
+}
+
+.recent__container {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.post {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: #fff;
+    padding: 24px;
+    border-radius: 4px;
+}
+
+.post__meta {
+    display: flex;
+    gap: 26px;
+    font-size: 18px;
+}
+
+.recent__title {
+    font-size: 22px;
+    font-weight: normal;
+}
+
+.recent__link {
+    color: #00A8CC;
+    font-size: 16px;
+}
+
+.post__title {
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.post__text {
+    font-size: 16px;
 }
