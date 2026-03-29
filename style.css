@@ -175,25 +175,6 @@ header {
     font-size: 16px;
 }
 
-@media (max-width: 1000px) {
-    .title {
-        /* color: red; */
-    }
-}
-
-@media (min-width: 1000px) {
-    .title {
-        /* font-family: 'Arial'; */
-    }
-}
-
-@media (max-width: 576px) {
-   header {
-    justify-content: center;
-    padding-right: 15px;
-   }
-}
-
 @media (max-width: 768px) {
     .image {
         width: 180px;
@@ -202,5 +183,50 @@ header {
 
     .title {
         font-size: 36px;
+    }
+
+    .about {
+        padding-top: 60px;
+    }
+
+    .info {
+        gap: 24px;
+    }
+}
+
+@media (max-width: 620px) {
+    .about__container {
+        flex-direction: column-reverse;
+    }
+
+    .about {
+        padding-top: 12px;
+    }
+
+    .image {
+        align-self: center;
+    }
+
+    .info {
+        max-width: unset;
+    }
+}
+
+@media (max-width: 576px) {
+   header {
+    justify-content: center;
+    padding-right: 15px;
+   }
+
+   .container {
+    width: calc(100% - 15px - 15px);
+   }
+
+   .title {
+    font-size: 28px;
+   }
+
+    .info {
+        gap: 16px;
     }
 }
